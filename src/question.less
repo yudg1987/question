@@ -1,0 +1,39 @@
+.dialog {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+
+  .body {
+    margin-top: 100PX;
+    width: 90%;
+    background: aliceblue;
+    height: 350PX;
+    display: flex;
+    flex-direction: column;
+
+    .question-title, .question-answer {
+      border-bottom: 1PX solid #ccc;
+      margin: 10PX;
+      padding: 5PX;
+      width: 90%;
+    }
+
+    .question-answer {
+      height: 60%;
+      background-color: azure;
+    }
+    .ok,.cancle{
+      background-color: green;
+      border-radius: 0;
+      width: 50%;
+    }
+    .cancle{
+      background-color: gray;
+      margin-bottom: 4PX;
+    }
+  }
+}
